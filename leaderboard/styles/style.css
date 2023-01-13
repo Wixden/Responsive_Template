@@ -284,11 +284,15 @@ hr {
     /* padding: 20px; */
     text-align: center;
   }
-  .top_players,
   .blogs,
   .courses {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .top_players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .player,
   .blog {
     flex-direction: column;
@@ -322,6 +326,12 @@ hr {
   .blogs {
     padding: 30px;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player {
+    flex-direction: column;
+    text-align: center;
+    /* margin: 0 auto; */
   }
 
   .blog {
