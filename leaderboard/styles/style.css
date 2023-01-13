@@ -314,18 +314,17 @@ hr {
     text-align: center;
   }
   .top_players,
-  .blogs,
   .courses {
+    padding: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .player,
-  .blog {
-    flex-direction: column;
-    text-align: center;
-    /* margin: 0 auto; */
+
+  .blogs {
+    padding: 30px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .navbar ul {
-    display: none;
+  .blog {
+    column-gap: 50px;
   }
 }
