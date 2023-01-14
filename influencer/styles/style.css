@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Poppins";
+}
+
+.main,
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.header hr {
+  border: 1px solid #ddd;
+}
+
+/*--------------------------
+        Header Styles
+--------------------------*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 34px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 34px;
+}
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+}
+
+.fa-heart {
+  font-size: 30px;
+}
+
+/* Banner Styles */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0;
+}
+
+.banner_details {
+  width: 60%;
+}
+
+.banner_image {
+  width: 40%;
+  height: 475px;
+}
+
+.intro_title {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+
+.intro_description {
+  width: 505px;
+  margin: 16px 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #3a3a3a;
+}
+
+.banner_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/BG/camera-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.book_now {
+  padding: 15px 35px;
+  background: #e02c6d;
+  border-radius: 41px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.book_now:hover i {
+  transition: 0.3s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.book_now i,
+.see_more i,
+.join_now i {
+  margin-left: 10px;
+}
+
+/* Brands Styles */
+
+.brands {
+  margin: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: end;
+  max-width: 1100px;
+}
+
+/* Collections Styles */
+
+.collection {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 1100px;
+}
+
+.section_title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 70px;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  row-gap: 50px;
+}
+
+.collection_item {
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.collection_item:hover {
+  top: -20px;
+}
+
+.collection_title {
+  margin-top: 16px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+}
+
+.price {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.collection_description {
+  margin-top: 5px;
+  width: 200px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  color: #787885;
+}
+
+.active {
+  color: #ffbb00;
+}
+
+.empty {
+  color: #aaa;
+}
+
+.rating {
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.rating p {
+  margin-left: 15px;
+}
+
+.see_more_button {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.see_more {
+  padding: 15px 35px;
+  background: transparent;
+  border-radius: 41px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e02c6d;
+  cursor: pointer;
+}
+
+.see_more:hover i {
+  transition: 0.3s ease-in-out;
+  transform: rotate(360deg);
+}
+
+/* Featured Section Styles */
+.feature_section {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.featured {
+  display: flex;
+  column-gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.featured_title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #0a0826;
+}
+
+.featured_description {
+  width: 500px;
+  margin: 15px 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+}
+
+.join_now {
+  padding: 15px 35px;
+  background: #e02c6d;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.join_now:hover i {
+  transition: 0.3s ease-in-out;
+  transform: rotate(360deg);
+}
+
+/* Footer Section Styles */
+
+.footer {
+  background-color: #0a0826;
+  color: #fff;
+  margin-top: 100px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .section_title {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.footer_description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #d9dbe1;
+}
+
+.social img {
+  margin: 20px 5px;
+  width: 36px;
+  height: 36px;
+  filter: invert(1);
+}
