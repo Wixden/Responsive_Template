@@ -98,7 +98,14 @@ ul li a {
   justify-content: center;
   align-items: center;
   width: 40%;
-  height: 480px;
+  padding: 20px;
+}
+
+.banner_image {
+  background-image: url("../images/BG/camera-bg.png");
+  background-repeat: no-repeat;
+  background-position: contain;
+  background-size: cover;
 }
 
 .intro_title {
@@ -116,13 +123,6 @@ ul li a {
   line-height: 24px;
   font-feature-settings: "liga" off;
   color: #3a3a3a;
-}
-
-.banner_image {
-  background-image: url("../images/BG/camera-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .book_now {
@@ -347,15 +347,16 @@ ul li a {
 /* Mobile Devices (668px) */
 
 @media screen and (max-width: 668px) {
-  .main,
+  body,
   .header {
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .navbar {
     justify-content: space-between;
     padding: 40px 30px;
     text-align: center;
+    margin: 0 auto;
   }
   .menu {
     display: none;
@@ -374,53 +375,56 @@ ul li a {
     display: block;
     font-size: 24px;
   }
-  .mobile_only {
-    display: block;
-  }
 
+  /* Banner Section */
   .banner {
+    /* width: 100%; */
+    /* background-color: red; */
     margin: 0 auto;
     flex-direction: column;
-    row-gap: 40px;
     padding: 30px;
   }
   .banner_details,
   .banner_thumbnail {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .banner_thumbnail {
     padding: 10px 100px;
-    justify-content: center;
-    align-items: center;
+    transform: scale(0.8);
   }
 
   .banner_image {
-    /* width: 100%; */
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
   }
   .banner_image img {
     width: 90%;
   }
+  .banner_details {
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+  }
 
   .intro_title {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 42px;
-    text-align: center;
-
-    color: #3a3a3a;
+    font-size: 40px;
+    line-height: 50px;
   }
-  .intro_description {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    font-feature-settings: "liga" off;
 
-    color: #3a3a3a;
+  .intro_description {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hide {
+    display: none;
   }
 }
