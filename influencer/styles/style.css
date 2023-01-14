@@ -5,8 +5,9 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #fff;
   font-family: "Poppins";
+  margin: 0 auto;
 }
 
 .main,
@@ -24,6 +25,10 @@ a {
   border: 1px solid #ddd;
 }
 
+.mobile_only {
+  display: none;
+}
+
 /*--------------------------
         Header Styles
 --------------------------*/
@@ -33,6 +38,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 80px;
+}
+
+.menu_owl {
+  display: none;
 }
 
 .logo {
@@ -67,14 +76,15 @@ ul li a {
   font-size: 20px;
 }
 
-.fa-heart {
-  font-size: 30px;
+.fa-cart-shopping {
+  font-size: 25px;
 }
 
 /* Banner Styles */
 .banner {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
   align-items: center;
   margin: 70px 0;
 }
@@ -83,9 +93,12 @@ ul li a {
   width: 60%;
 }
 
-.banner_image {
+.banner_thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40%;
-  height: 475px;
+  height: 480px;
 }
 
 .intro_title {
@@ -106,9 +119,6 @@ ul li a {
 }
 
 .banner_image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: url("../images/BG/camera-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -328,4 +338,89 @@ ul li a {
   width: 36px;
   height: 36px;
   filter: invert(1);
+}
+
+/*------------------------
+       Media Queries
+------------------------*/
+
+/* Mobile Devices (668px) */
+
+@media screen and (max-width: 668px) {
+  .main,
+  .header {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    font-feature-settings: "liga" off;
+
+    color: #3a3a3a;
+  }
+  .mobile_only {
+    display: block;
+    font-size: 24px;
+  }
+  .mobile_only {
+    display: block;
+  }
+
+  .banner {
+    margin: 0 auto;
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 30px;
+  }
+  .banner_details,
+  .banner_thumbnail {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner_thumbnail {
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner_image {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner_image img {
+    width: 90%;
+  }
+
+  .intro_title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #3a3a3a;
+  }
+  .intro_description {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    font-feature-settings: "liga" off;
+
+    color: #3a3a3a;
+  }
 }
