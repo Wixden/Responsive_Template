@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/c2db77429d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg py-5">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse ms-auto"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav ms-auto fw-medium">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
+              <button class="btn btn-outline-warning ms-5">Login</button>
+            </div>
+          </div>
+        </nav>
+        <!-- Banner/Hero Section -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 pb-5 align-items-center g-1"
+              >
+                <div class="col">
+                  <p class="intro__subtitle">
+                    Computer-controlled digital transistorized with electronic
+                    advance
+                  </p>
+                  <h1 class="intro__title">Honda CBR 1000R</h1>
+                  <p class="intro__description mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua <br />
+                    dolor do amet sint. Velit officia consequat duis enim velit
+                    <br />
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+                <div class="col py-5">
+                  <img
+                    class="img-fluid"
+                    src="./images/bikes/carousel/bike-4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 pb-5 align-items-center g-1"
+              >
+                <div class="col">
+                  <p class="intro__subtitle">
+                    Computer-controlled digital transistorized with electronic
+                    advance
+                  </p>
+                  <h1 class="intro__title">KTM 1290 Super Duke R</h1>
+                  <p class="intro__description mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua <br />
+                    dolor do amet sint. Velit officia consequat duis enim velit
+                    <br />
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+                <div class="col py-5">
+                  <img
+                    class="img-fluid"
+                    src="./images/bikes/carousel/bike-11.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 pb-5 align-items-center g-1"
+              >
+                <div class="col">
+                  <p class="intro__subtitle">
+                    Computer-controlled digital transistorized with electronic
+                    advance
+                  </p>
+                  <h1 class="intro__title">Yamaha YZF-R1</h1>
+                  <p class="intro__description mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua <br />
+                    dolor do amet sint. Velit officia consequat duis enim velit
+                    <br />
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+                <div class="col py-5">
+                  <img
+                    class="img-fluid"
+                    src="./images/bikes/carousel/bike-12.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-2 pb-5 align-items-center g-1"
+              >
+                <div class="col">
+                  <p class="intro__subtitle">
+                    Computer-controlled digital transistorized with electronic
+                    advance
+                  </p>
+                  <h1 class="intro__title">Yamaha FZ 16</h1>
+                  <p class="intro__description mt-4">
+                    Amet minim mollit non deserunt ullamco est sit aliqua <br />
+                    dolor do amet sint. Velit officia consequat duis enim velit
+                    <br />
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </p>
+                </div>
+                <div class="col py-5">
+                  <img
+                    class="img-fluid"
+                    src="./images/bikes/carousel/bike-15.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="featured__bikes">
+        <div class="container">
+          <h1 class="text-center section__title">
+            Featured Bikes In This Year
+          </h1>
+          <p class="text-center section__subTitle">Best bike collection</p>
+          <hr class="hr__line mx-auto border-danger" />
+          <div
+            class="row row-cols-1 row-cols-sm-3 row-cols-md-3 g-4 my-5 py-5 row-gap-5"
+          >
+            <div class="col">
+              <img class="img-fluid" src="./images/bikes/bike-9.png" alt="" />
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/bikes/bike-4.png" alt="" />
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="./images/bikes/bike-14.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section -->
+      <section class="blog">
+        <div class="container">
+          <h1 class="section__title">Latest News</h1>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+            <div class="col">
+              <div class="card p-4">
+                <img
+                  class="img-fluid card-img-top"
+                  src="./images/bikes/bike-1.png"
+                  alt=""
+                />
+                <div class="card-body mt-4">
+                  <h3 class="blog__title">2021 Honda CBR500R</h3>
+                  <p class="blog__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lacus, fermentum amet faucibus sed id nisi lectus at.
+                  </p>
+                  <button class="btn bz__btn">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-4">
+                <img
+                  class="img-fluid card-img-top"
+                  src="./images/bikes/bike-3.png"
+                  alt=""
+                />
+                <div class="card-body mt-4">
+                  <h3 class="blog__title">Motorcycles & Scooters</h3>
+                  <p class="blog__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lacus, fermentum amet faucibus sed id nisi lectus at.
+                  </p>
+                  <button class="btn bz__btn__outline">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card p-4">
+                <img
+                  class="img-fluid card-img-top"
+                  src="./images/bikes/bike-2.png"
+                  alt=""
+                />
+                <div class="card-body mt-4">
+                  <h3 class="blog__title">Ducati XDIAVEL S-73</h3>
+                  <p class="blog__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lacus, fermentum amet faucibus sed id nisi lectus at.
+                  </p>
+                  <button class="btn bz__btn__outline">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Happy Client Section -->
+      <section class="testimonials">
+        <div class="container">
+          <h1 class="section__title">
+            Happy <span class="text-warning"> Clients Reviews</span>
+          </h1>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 py-5 px-3">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/users/user-1.png"
+                  alt=""
+                  class="img-fluid client__profile mx-auto pt-5"
+                />
+                <div class="card-body my-3 text-center">
+                  <p class="card-details client__review">
+                    Use our powerful mobile-first flexbox grid to build layouts
+                    of all shapes and sizes thanks to a twelve column system,
+                    six default responsive tiers.
+                  </p>
+                  <p class="text-warning mb-4">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <h5 class="text-capitalize client__name mb-2">
+                    david beckham
+                  </h5>
+                  <p class="client__proffession">Footballer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/users/user-2.png"
+                  alt=""
+                  class="img-fluid client__profile mx-auto pt-5"
+                />
+                <div class="card-body my-3 text-center">
+                  <p class="card-details client__review">
+                    Use our powerful mobile-first flexbox grid to build layouts
+                    of all shapes and sizes thanks to a twelve column system,
+                    six default responsive tiers.
+                  </p>
+                  <p class="text-warning mb-4">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <h5 class="text-capitalize client__name mb-2">
+                    david beckham
+                  </h5>
+                  <p class="client__proffession">Footballer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./images/users/user-3.png"
+                  alt=""
+                  class="img-fluid client__profile mx-auto pt-5"
+                />
+                <div class="card-body my-3 text-center">
+                  <p class="card-details client__review">
+                    Use our powerful mobile-first flexbox grid to build layouts
+                    of all shapes and sizes thanks to a twelve column system,
+                    six default responsive tiers.
+                  </p>
+                  <p class="text-warning mb-4">
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <h5 class="text-capitalize client__name mb-2">
+                    david beckham
+                  </h5>
+                  <p class="client__proffession">Footballer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

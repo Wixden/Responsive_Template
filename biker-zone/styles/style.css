@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  margin: 100px auto;
+}
+
+.header {
+  background: #264653;
+  color: #fff;
+}
+.header a {
+  color: #fff;
+}
+
+.intro__title {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.intro__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.intro__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #e0e0e0;
+}
+
+/* Feature Section Style */
+.section__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.section__subTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #e76f51;
+  margin-bottom: 5px;
+}
+
+.hr__line {
+  width: 100px;
+  margin: 0;
+}
+
+/* Blog Section */
+.card {
+  transition: 0.6s ease;
+}
+.card:hover {
+  transform: translateY(-25px);
+}
+
+.blog__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  font-feature-settings: "liga" off;
+  color: #18191f;
+}
+
+.blog__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  font-feature-settings: "liga" off;
+  color: #6c6c6c;
+}
+
+.bz__btn {
+  background: #e76f51;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.bz__btn__outline {
+  outline: 1px solid #e76f51;
+  border-radius: 5px;
+  padding: 10px 30px;
+}
+
+.bz__btn:hover {
+  outline: 1px solid #e76f51;
+}
+
+.bz__btn__outline:hover {
+  background: #e76f51;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+/* Testimonials Section */
+.client__profile {
+  width: 150px;
+}
+
+.client__review {
+  padding: 0 10%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #6c6c6c;
+}
+
+.client__name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #23a6f0;
+}
+
+.client__proffession {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
