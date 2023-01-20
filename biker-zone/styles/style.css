@@ -40,6 +40,7 @@ section {
   line-height: 72px;
   text-align: center;
   color: #000000;
+  padding: 50px 0;
 }
 
 .section__subTitle {
@@ -131,4 +132,44 @@ section {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.2px;
+}
+
+/* Footer Section Style */
+.footer {
+  background-color: #0b0d17;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "liga" off;
+  color: #ffffff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__menu ul {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer__menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.download {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-feature-settings: "liga" off;
+  color: #d9dbe1;
 }
