@@ -109,7 +109,7 @@ section {
 }
 
 .client__review {
-  padding: 0 10%;
+  padding: 0 9%;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -126,7 +126,7 @@ section {
   color: #23a6f0;
 }
 
-.client__proffession {
+.client__profession {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
