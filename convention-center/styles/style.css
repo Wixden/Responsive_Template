@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins";
+}
+
+section {
+  margin-top: 100px;
+}
+
+/* Header section */
+.header__logo {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  font-feature-settings: "liga" off;
+  color: #3e3e3e;
+}
+
+.banner-image-1 {
+  background: url(../images/banner/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.banner-image-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../images/banner/banner-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.banner-image-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../images/banner/banner-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.banner-image-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.55) 21.92%,
+      rgba(0, 0, 0, 0.418) 160.04%,
+      rgba(0, 0, 0, 0.121) 160.06%
+    ),
+    url(../images/banner/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.slider__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.slider__subTitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* album section */
+.section__title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 60px;
+  color: #0a0826;
+}
+
+.section__description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6c6c6c;
+}
+
+.mobile__only {
+  display: none !important;
+}
+
+@media screen and (max-width: 990px) {
+  .mobile__only {
+    display: block !important;
+    text-align: center;
+  }
+  .desktop__only {
+    display: none;
+  }
+}
+
+/* Package Section Style */
+
+.package .section__title {
+  margin-bottom: 100px;
+}
+.package__card {
+  padding: 50px 30px;
+  transition: background-color 1s linear, transform 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out;
+  border-radius: 26px;
+}
+
+.package__card:hover {
+  color: #fff;
+  transform: translateY(-40px);
+  background-color: #3f87f5;
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+  border-radius: 26px;
+}
+
+.package__card:hover li,
+.package__card:hover i,
+.package__card:hover p,
+.package__card:hover h1 {
+  color: #fff;
+}
+
+.active__card {
+  color: #fff;
+  transform: translateY(-40px);
+  background-color: #3f87f5;
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+  border-radius: 26px;
+  top: 0;
+  right: 0;
+}
+.active__card:hover {
+  transform: translateY(-40px);
+  position: relative;
+}
+
+.active__card p,
+.active__card li,
+.active__card h1,
+.active__card i {
+  color: #fff !important;
+}
+
+.active__card .package__rate {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: #231d4f;
+  margin-bottom: 20px;
+}
+
+.package__Title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #231d4f;
+}
+
+.package__subTitle {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #848199;
+}
+
+.package__features {
+  padding: 0;
+  list-style-type: none;
+}
+
+.package__features li {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #848199;
+}
+
+.package__features li i {
+  color: #3f87f5;
+  margin-right: 10px;
+}
+
+.package__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background: #fdf4fa;
+  border-radius: 24px;
+  padding: 15px 50px;
+  color: #3f87f5;
+}
+
+.package__button button {
+  background: transparent;
+}
+
+.ribbon {
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  top: -10px;
+  right: 20px;
+}
+
+.testimonials__comments {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #6c6c6c;
+  margin-bottom: 25px;
+}
+
+.testimonials__author {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0c1920;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.testimonials__author__profession {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #747474;
+  margin-top: 0;
+}
+
+/* Footer Section */
+.app__icon {
+  width: 150px;
+}

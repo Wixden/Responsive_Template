@@ -8,6 +8,10 @@ section {
   margin: 100px auto;
 }
 
+a:hover {
+  color: #ffae00 !important;
+}
+
 .header {
   background: #264653;
   color: #fff;
